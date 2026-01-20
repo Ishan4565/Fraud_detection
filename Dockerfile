@@ -8,7 +8,11 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
     build-essential \
     curl \
-    software-properties-common \
+    # 3. Basic tools needed for some ML libraries
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
     && rm -rf /var/lib/apt/lists/*
 
 # 4. Copy your files from your computer into the box
@@ -22,4 +26,5 @@ EXPOSE 8501
 
 # 7. THE ONLY LINE YOU CHANGE:
 # Change 'your_filename.py' to match the file in this folder
+
 CMD ["streamlit", "run", "fraud_app.py", ...]
