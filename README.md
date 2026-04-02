@@ -267,7 +267,7 @@ print(f"Cross-validation AUC: {scores.mean():.3f} (+/- {scores.std():.3f})")
 
 - **Email:** ishandh454@gmail.com
 - **GitHub:** Ishan4565
-- **LinkedIn:** [Your LinkedIn]
+- **LinkedIn:** https://www.linkedin.com/in/ishan-dhakal-2b1933376/
 
 ---
 
